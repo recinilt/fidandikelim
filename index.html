@@ -163,21 +163,21 @@
 
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h5>Misyonumuz</h5>
+                            <h5 id="misyon">Misyonumuz</h5>
                         </div>
                         <div class="card-body">
-                            <p>
-                                Alınan $Fidan coinler ile yeni fidanlar dikmek.
+                            <p id="misyonicerik">
+                                Satın alınan $Fidan coinler ile yeni fidanlar dikmek.
                             </p>
                         </div>
                     </div>
 
                     <div class="card mb-4">
                         <div class="card-header">
-                            <h5>Vizyonumuz</h5>
+                            <h5 id="vizyon">Vizyonumuz</h5>
                         </div>
                         <div class="card-body">
-                            <p>
+                            <p id="vizyonicerik">
                                 Yemyeşil ağaçlarla içiçe bir gelecek.
                             </p>
                         </div>
@@ -205,7 +205,7 @@
 
         <div class="card text-center bg-light  pt-4">
             <div class="card-header">
-              <h3> Fidan Dikimlerimizden Bazıları</h3>
+              <h3 id="dikimicerik">Fidan Dikimlerimizden Bazıları</h3>
             </div>
             <div class="card-body">
                 <div class="container" style="padding-top: 70px;">
@@ -273,19 +273,20 @@
                         <h4>WhitePaper</h5>
                     </div>
                     <div class="card-body">
-                        <h5>Amacımız</h5>
-                        <p>
-                            Alınan $Fidan coinler ile yeni fidanlar dikmek.
+                        <h5 id="amac">Amacımız</h5>
+                        <p id="amacicerik">
+                            Satın alınan $Fidan coinler ile yeni fidanlar dikmek.
                         </p>
-                        <h5>Yöntemimiz</h5>
-                        <p>2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. 10 dolar altında alınan coinlerin tutarları toplanarak 10 dolara ulaştığında fidan dikimine eklenecektir. </p>
-                          <p>Alınan coinlerin takibini <a href=""> buraya</a> tıklayarak takip edebilirsiniz. </p>
-                            <p>Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak youtube'da paylaşacağız. </p>
-                              <p>Youtube linkine <a href="">buraya</a> tıklayarak ulaşabilirsiniz.</p>
-                                <p>(Tabi Allah izin verirse, İlla Hû.)</p>
-                        <h5>$Fidan Token Arzı:</h5>
-                            <p> Toplam Arz: 99.000.000 $Fidan</p>
-                            <p>Alınan tokenler, geri satılamayacak şekilde oluşturuldu.</p>
+                        <h5 id="yontem">Yöntemimiz</h5>
+                        <p id="yontemicerik1">2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. 10 dolar altında alınan coinlerin tutarları toplanarak 10 dolara ulaştığında fidan dikimine eklenecektir. </p>
+                          <p id="yontemicerik2">Satın alınan coinlerin takibini <a href=""> buraya</a> tıklayarak takip edebilirsiniz. </p>
+                            <p id="yontemicerik3">Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak Youtube'da paylaşacağız. </p>
+                              <p id="yontemicerik4">Youtube linkine <a href="">buraya</a> tıklayarak ulaşabilirsiniz.</p>
+                                <p id="yontemicerik5">(Tabi Allah izin verirse, İlla Hû.)</p>
+                        <h5 id="token">$Fidan Token Arzı:</h5>
+                            <p id="tokenicerik1"> Toplam Arz: 99.000.000 $Fidan</p>
+                            <p id="tokenicerik2">Satın alınan tokenler, geri satılamayacak şekilde oluşturuldu.</p>
+                            <p id="ekip">Ekip üyeleri: Recep YENİ</p>
             
                     </div>
                 </div>
@@ -347,7 +348,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card-header d-md-none">
-                    <h5>İletişim</h5>
+                    <h5 id="iletisimbaslik">İletişim</h5>
                 </div>
                 
                 <div id="map"  style="height: 400px; width: 100%;"></div>
@@ -356,15 +357,15 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header  d-none d-md-block">
-                        <h5>İletişim</h5>
+                        <h5 id="iletisim2">İletişim</h5>
                     </div>
                     <div class="card-body">
                         <p class="card-text">Recep YENİ</p>
-                        <h5 class="card-title">Dikim Yeri Adresi:</h5>
+                        <h5 class="card-title" id="adres">Dikim Yeri Adresi:</h5>
                         <p class="card-text">Tekirdağ</p>
                         <p>Türkiye</p>
                         <br>
-                        <h5 class="card-title">Eposta:</h5>
+                        <h5 class="card-title" id="eposta">Eposta:</h5>
                         <p class="card-text">recepyeni@yahoo.com</p>
                     </div>
 
@@ -397,7 +398,29 @@
             const navdikimler = document.getElementById("navdikimler");
             const pfidandikelim = document.getElementById("pfidandikelim");
             const baslik=document.getElementById("baslik");
-            
+            const misyon=document.getElementById("misyon");
+            const misyonicerik=document.getElementById("misyonicerik");
+            const vizyon=document.getElementById("vizyon");
+            const vizyonicerik=document.getElementById("vizyonicerik");
+            const dikimicerik=document.getElementById("dikimicerik");
+
+            const amac=document.getElementById("amac");
+            const amacicerik=document.getElementById("amacicerik");
+            const yontem=document.getElementById("yontem");
+            const yontemicerik1=document.getElementById("yontemicerik1");
+            const yontemicerik2=document.getElementById("yontemicerik2");
+            const yontemicerik3=document.getElementById("yontemicerik3");
+            const yontemicerik4=document.getElementById("yontemicerik4");
+            const yontemicerik5=document.getElementById("yontemicerik5");
+            const token=document.getElementById("token");
+            const tokenicerik1=document.getElementById("tokenicerik1");
+            const tokenicerik2=document.getElementById("tokenicerik2");
+            const iletisimbaslik=document.getElementById("iletisimbaslik");
+            const iletisim2=document.getElementById("iletisim2");
+            const adres=document.getElementById("adres");
+            const eposta=document.getElementById("eposta");
+            const ekip=document.getElementById("ekip");
+
 
 en.addEventListener('click', () => {
   english();
@@ -416,6 +439,31 @@ function english() {
     navdikimler.innerHTML="Plantings";
     pfidandikelim.innerHTML="Throughout the year 2022, we are planting new saplings with the $Fidan coins you have purchased. We plant 1 sapling for every $10 dollar coin purchase. Planting will be done in bulk once a week. We will take the sapling plantings to the camera and share them on youtube. (Of course, if God permits, Illa Hu.)";
     baslik.innerHTML="LET'S PLANT SAPLINGS";
+    misyon.innerHTML="Our Mission";
+    misyonicerik.innerHTML="Planting new saplings with the purchased $Fidan coins.";
+    vizyon.innerHTML="Our Vision";
+    vizyonicerik.innerHTML="A future nestled with lush trees.";
+    dikimicerik.innerHTML="Some of Our Sapling Plantings";
+    amac.innerHTML="Our Aim";
+    amacicerik.innerHTML="Planting new saplings with purchased $Fidan coins.";
+    yontem.innerHTML="Our Method";
+    yontemicerik1.innerHTML="Throughout the year 2022, we are planting new saplings with the $Fidan coins you have purchased. We plant 1 sapling for every $10 dollar coin purchase. The amounts of coins bought under 10 dollars will be added to the planting when it reaches 10 dollars. ";
+    yontemicerik2.innerHTML='You can track the purchased coins by clicking <a href=""> here</a>.';
+    yontemicerik3.innerHTML="Planting will be done in bulk once a week. We will take the planting of the saplings to the camera and share them on Youtube.";
+    yontemicerik4.innerHTML='You can access the Youtube link by clicking <a href="">here</a>.';
+    yontemicerik5.innerHTML="(Of course, if God permits, Illa Hu.)";
+    token.innerHTML="$Fidan Token Supply:";
+    tokenicerik1.innerHTML="Total Supply: $99,000,000 $Fidan";
+    tokenicerik2.innerHTML="Purchased tokens are created to be non-resaleable.";
+    iletisimbaslik.innerHTML="Communication";
+    iletisim2.innerHTML="Communication";
+    adres.innerHTML="Planting Address:";
+    eposta.innerHTML="Email:";
+    ekip.innerHTML="Team members: Recep YENİ";
+
+
+
+
 };
 
 function turkish() {
@@ -427,6 +475,30 @@ function turkish() {
     navdikimler.innerHTML="Dikimler";
     pfidandikelim.innerHTML="2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak youtube'da paylaşacağız. (Tabi Allah izin verirse, İlla Hû.)";
     baslik.innerHTML="FİDAN DİKELİM";
+    misyon.innerHTML="Misyonumuz";
+    misyonicerik.innerHTML="Satın alınan $Fidan coinler ile yeni fidanlar dikmek.";
+    vizyon.innerHTML="Vizyonumuz";
+    vizyonicerik.innerHTML="Yemyeşil ağaçlarla içiçe bir gelecek.";
+    dikimicerik.innerHTML="Fidan Dikimlerimizden Bazıları";
+    amac.innerHTML="Amacımız";
+    amacicerik.innerHTML="Alınan $Fidan coinler ile yeni fidanlar dikmek.";
+    yontem.innerHTML="Yöntemimiz";
+    yontemicerik1.innerHTML="2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. 10 dolar altında alınan coinlerin tutarları toplanarak 10 dolara ulaştığında fidan dikimine eklenecektir. ";
+    yontemicerik2.innerHTML='Satın alınan coinlerin takibini <a href=""> buraya</a> tıklayarak takip edebilirsiniz.';
+    yontemicerik3.innerHTML="Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak Youtube'da paylaşacağız.";
+    yontemicerik4.innerHTML='Youtube linkine <a href="">buraya</a> tıklayarak ulaşabilirsiniz.';
+    yontemicerik5.innerHTML="(Tabi Allah izin verirse, İlla Hû.)";
+    token.innerHTML="$Fidan Token Arzı:";
+    tokenicerik1.innerHTML="Toplam Arz: 99.000.000 $Fidan";
+    tokenicerik2.innerHTML="Satın alınan tokenler, geri satılamayacak şekilde oluşturuldu.";
+    iletisimbaslik.innerHTML="İletişim";
+    iletisim2.innerHTML="İletişim";
+    adres.innerHTML="Dikim Yeri Adresi:";
+    eposta.innerHTML="Eposta:";
+    ekip.innerHTML="Ekip üyeleri: Recep YENİ";
+
+
+
 };
 
 
