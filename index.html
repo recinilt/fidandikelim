@@ -94,16 +94,19 @@
             <div id="navbarCollapse" class="collapse navbar-collapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home" class="nav-link">Ana Sayfa</a>
+                        <a href="#home" class="nav-link" id="navanasayfa">Ana Sayfa</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#urunler" class="nav-link">Dikimler</a>
+                        <a href="#urunler" class="nav-link" id="navdikimler">Dikimler</a>
                     </li>
                     <li class="nav-item">
-                      <a href="#whitepaper" class="nav-link">WhitePaper</a>
+                      <a href="#whitepaper" class="nav-link" id="navwhite">WhitePaper</a>
                   </li>
                     <li class="nav-item">
-                        <a href="#iletisim" class="nav-link">İletişim</a>
+                        <a href="#iletisim" class="nav-link" id="naviletisim">İletişim</a>
+                    </li>
+                    <li class="nav-item">
+                        <span class="nav-link">Lang: <span id="en"  style="color: gray;">En</span>  <span id="tr" style="color: green;">Tr</span></span>
                     </li>
 
                 </ul>
@@ -119,10 +122,10 @@
         <div id="home" class="jumbotron bg-dark text-white">
             <div class="container">
                 <div class="col-md-6 px-0">
-                    <h1 class="display-4 font-italic">
+                    <h1 class="display-4 font-italic" id="baslik">
                         FİDAN DİKELİM
                     </h1>
-                    <p class="lead my-3 pb-3">
+                    <p class="lead my-3 pb-3" id="pfidandikelim">
                       2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak youtube'da paylaşacağız. (Tabi Allah izin verirse, İlla Hû.)
                     </p>
                     <!-- <p class="lead mb-0">
@@ -384,6 +387,59 @@
         crossorigin="anonymous"></script>
 
         <script>
+            ////////////////////////////
+            //En-Tr
+            const en = document.getElementById("en");
+            const tr = document.getElementById("tr");
+            const navanasayfa = document.getElementById("navanasayfa");
+            const naviletisim = document.getElementById("naviletisim");
+            const navwhite = document.getElementById("navwhite");
+            const navdikimler = document.getElementById("navdikimler");
+            const pfidandikelim = document.getElementById("pfidandikelim");
+            const baslik=document.getElementById("baslik");
+            
+
+en.addEventListener('click', () => {
+  english();
+});
+
+tr.addEventListener('click', () => {
+  turkish();
+});
+
+function english() {
+    //alert("English");
+    en.setAttribute("style", "color:green;");
+    tr.setAttribute("style", "color:gray;");
+    navanasayfa.innerHTML="Home Page";
+    naviletisim.innerHTML="Contact";
+    navdikimler.innerHTML="Plantings";
+    pfidandikelim.innerHTML="Throughout the year 2022, we are planting new saplings with the $Fidan coins you have purchased. We plant 1 sapling for every $10 dollar coin purchase. Planting will be done in bulk once a week. We will take the sapling plantings to the camera and share them on youtube. (Of course, if God permits, Illa Hu.)";
+    baslik.innerHTML="LET'S PLANT SAPLINGS";
+};
+
+function turkish() {
+    //alert("Turkish");
+    en.setAttribute("style", "color:gray;");
+    tr.setAttribute("style", "color:green;");
+    navanasayfa.innerHTML="Ana Sayfa";
+    naviletisim.innerHTML="İletişim";
+    navdikimler.innerHTML="Dikimler";
+    pfidandikelim.innerHTML="2022 yılı boyunca, alım yaptığınız $Fidan coinler ile yeni fidanlar dikiyoruz. Her 10$ dolarlık coin alımına 1 fidan dikiyoruz. Dikimler, haftada 1 toplu olarak yapılacaktır. Fidan dikimlerini kameraya alarak youtube'da paylaşacağız. (Tabi Allah izin verirse, İlla Hû.)";
+    baslik.innerHTML="FİDAN DİKELİM";
+};
+
+
+
+
+
+
+
+
+
+
+
+            /////////////////////////
             //şu videodan izlenerek yapıldı
             //https://www.youtube.com/watch?v=zbFDQ16oRwY
             function initMap(){
