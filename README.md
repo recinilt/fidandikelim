@@ -1,5 +1,9 @@
 # fidandikelim
 Aldığınız $fidan coinler ile yeni fidanlar dikiyoruz.
+Geri satılamayan $Fidan tokeni pankekswapta listelendi. Contract adresi: 0xfd77d50113d6acbd818319d0174fc4a63af2cdec
+ Metamaskınız ile alabileceğiniz adres:
+https://www.dextools.io/app/bsc/pair-explorer/0xfd77d50113d6acbd818319d0174fc4a63af2cdec
+
 
 # WhitePaper
 Amacımız
@@ -17,6 +21,8 @@ Youtube linkine buraya tıklayarak ulaşabilirsiniz.
 (Tabi Allah izin verirse, İlla Hû.)
 
 $Fidan Token Arzı:
+Contract adresi: 0xfd77d50113d6acbd818319d0174fc4a63af2cdec
+
 Toplam Arz: 99.000.000 $Fidan
 
 Satın alınan tokenler, geri satılamayacak şekilde oluşturuldu.
@@ -41,6 +47,8 @@ You can access the Youtube link by clicking here.
 (Of course, if God permits, Illa Hu.)
 
 $Fidan Token Supply:
+Contract adress: 0xfd77d50113d6acbd818319d0174fc4a63af2cdec
+
 Total Supply: $99,000,000 $Fidan
 
 Purchased tokens are created to be non-resaleable.
